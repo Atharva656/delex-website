@@ -54,6 +54,8 @@ h6,
 .navbar-default {
   background-color: transparent !important;
   transition: all 0.5s;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .navbar-scrolled {
@@ -76,6 +78,10 @@ h6,
 
 .nav-links-li {
   margin-left: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-links-a {
@@ -101,10 +107,13 @@ h6,
 }
 
 .nav-links-bottom-line {
+  position: absolute;
+  bottom: 0;
   width: 0%;
   height: 2px;
   background-color: #ff6a00;
   left: 50%;
+  transform: translateX(-50%);
   transition: 0.5s;
 }
 
@@ -112,7 +121,6 @@ h6,
 .nav-links-a:active + .nav-links-bottom-line,
 .nav-links-a.active + .nav-links-bottom-line {
   width: 100%;
-  left: 0px;
 }
 
 .dropdown-menu {
@@ -522,4 +530,10 @@ h6,
 
 .footer-a:hover {
   padding-left: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .nav-banner-div {
+    border-bottom: none !important;
+  }
 }
