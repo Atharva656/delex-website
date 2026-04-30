@@ -148,9 +148,26 @@ h6,
   height: 800px;
 }
 
+.about-img {
+  object-fit: cover;
+  object-position: center;
+}
+
 @media (max-width: 991.98px) {
+  .about-img-wrapper {
+    min-height: 350px !important;
+    margin-top: 30px;
+  }
   .hero-img {
-    height: 600px;
+    height: 500px !important;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-img {
+    height: 400px !important;
   }
 }
 
@@ -206,6 +223,7 @@ h6,
 
 .banner-content-a1 {
   font-weight: 600 !important;
+  color: #ffffff !important; /* Ensure white text for high contrast on orange */
   background-color: #ff6a00 !important;
   border-color: #ff6a00 !important;
   transition: 0.5s !important;
@@ -231,6 +249,7 @@ h6,
 
 .banner-content-a2 {
   font-weight: 600 !important;
+  color: #ffffff !important; /* Ensure bright white text instead of dull grey */
   transition: 0.5s !important;
   animation-name: slide-in-right;
   animation-duration: 1s;
@@ -246,6 +265,7 @@ h6,
 .banner-content-a2:hover {
   background-color: #eef9ff !important;
   border-color: #eef9ff !important;
+  color: #091e3e !important; /* Dark blue text on light background for readability */
 }
 
 .banner-content-a2:focus {
@@ -352,6 +372,8 @@ h6,
   border-radius: 2px;
 }
 
+
+
 .about-us-bottom-line-child-span {
   width: 6px;
   height: 5px;
@@ -376,6 +398,7 @@ h6,
 }
 
 .about-us-guote-a {
+  color: #ffffff !important; /* Theme-consistent white text */
   animation-name: zoom-In;
 }
 
@@ -438,6 +461,7 @@ h6,
 }
 
 .get-guote-a {
+  color: #ffffff !important;
   background-color: #091e3e !important;
   border-color: #091e3e !important;
 }
@@ -446,6 +470,8 @@ h6,
   background-color: #081a35 !important;
   border-color: #071832 !important;
 }
+
+
 
 .owl-item.center .testimonial-items {
   background-color: #ffffff !important;
@@ -592,6 +618,10 @@ h6,
 
 /* Responsive Adjustments */
 @media (max-width: 991.98px) {
+  .nav-banner-div {
+    position: relative !important;
+  }
+
   .navbar-default {
     background-color: #091e3e !important;
     padding: 15px 20px !important;
