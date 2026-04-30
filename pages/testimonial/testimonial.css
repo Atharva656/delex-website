@@ -124,9 +124,13 @@ h6,
 }
 
 .dropdown-menu {
+  top: 100% !important;
+  margin-top: 0 !important;
   margin-left: -25px !important;
   border-radius: 2px !important;
   width: 240px;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-item {
