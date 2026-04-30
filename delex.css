@@ -700,8 +700,12 @@ h6,
   }
 
   .copyright-section {
-    padding: 20px 0;
+    padding: 15px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .footer-operating-line {
+    display: none !important;
   }
 
   .copyright-text {
