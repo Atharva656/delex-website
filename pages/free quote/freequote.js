@@ -1,3 +1,4 @@
+
 // owl-carousel-1
 
 $(".testimonial-carousel").owlCarousel({
@@ -65,3 +66,5 @@ window.addEventListener("scroll", () => {
     navLinks.forEach((link) => link.classList.remove("nav-links-scrolled"));
   }
 });
+
+
