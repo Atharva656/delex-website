@@ -632,6 +632,30 @@ h6,
 
 /* Responsive Adjustments */
 @media (max-width: 991.98px) {
+  .footer-compact-links {
+    display: flex !important;
+    gap: 15px;
+  }
+
+  .footer-compact-links a {
+    color: #eef9ff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
+  .copyright-text {
+    text-align: center;
+    font-size: 13px;
+    color: #6b6a75 !important;
+  }
+}
+
+.footer-compact-links {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
   .nav-banner-div {
     position: absolute !important;
   }
@@ -748,16 +772,6 @@ h6,
     border-top: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  .footer-operating-line {
-    display: none !important;
-  }
-
-  .copyright-text {
-    text-align: center;
-    width: 100%;
-    font-size: 13px;
-    color: #6b6a75 !important;
-  }
 }
 
 @media (max-width: 575.98px) {
